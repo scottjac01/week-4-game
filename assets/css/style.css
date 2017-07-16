@@ -1,0 +1,39 @@
+body {
+    margin-top: 50px;
+}
+
+.full {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.top-buffer { 
+	margin-top: 20px; 
+}
+
+.text-white{
+	color: black;
+}
+.col-spaced {
+     margin-left: 15px;
+}
+.diamond{
+	background: url('../images/diamond.jpg') center;
+	height: 65px;
+	width: 65px;
+}
+.ruby{
+	background: url('../images/ruby.jpg')center;
+	height: 65px;
+	width: 65px;
+}
+.emerald{
+	background: url('../images/emerald.jpg') center;
+	height: 65px;
+	width: 65px;
+}
+.sapphire{
+	background: url('../images/sapphire.jpg') center;
+	height: 65px;
+	width: 65px;
+}

@@ -2,26 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Crystal-Collectors</title>
+  <title>Crystal-Collector</title>
 
   <!-- Added link to the Javascript Library -->
   <script src= "assets/javascript/game.js"></script>
 
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <!-- Added a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+    <!--- CSS file -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
-<body>
+<body class="full">
 
 <!-- Header for main title -->
-	<div class="page-header">
-    <h1 class="text-center">Crystal-Collector</h1>
-    <h2 class="text-justify">Instructions:</h2>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+    					<h1 class="text-center text-primary">Crystals-Collector</h1>
+            </div>
+      	</div>
+ </nav>
 
-    <!--create a set of instructions -->
-      <ol>
-        <li>Press a letter on your keyboard to guess what letter has been choosen</li>
-        <li>You have 10 guess...Choose wisely!</li>
-      </ol>
+<!-- First box -->
+<div class="container-fluid">
+	<div class="row top-buffer">
+		<div class="col-md-4">
+			<h2 class="text-center bg-info text-white">Crystals Collector</h2>
+    </div>
+   </div>
+
+<!-- Second box create a set of instructions -->
+
+<div class="row top-buffer">
+	<div class="col-md-4 bg-warning text-white">
+		<h2>Instructions:</h2>
+      <ul>
+        <li>You will be given a random number at the start of the game</li>
+        <li>There are four crystals below.  By clicking a crystal, you will add a specific amount to your total score </li>
+        <li>You win the game by matching your total score to the random number.  You lose the game if the total score exceeds the random number.</li>
+        <li>The value of each crystal is hidden.  Only by clicking the crystal will you uncover the value.</li>
+        <li>Each time the game starts, the random number will change and so will the value of the crystals.</li>
+      </ul>
+    </div>
+   </div>
+
+<!-- Thrid box Score to Match -->
+
+<div class="row top-buffer">
+	<div class="col-md-3 bg-info text-white">
+			<h3>Number to Guess: <span id="number-to-guess" class="text-center">0</span></h3>
   </div>
+
+  <div class="col-md-1 bg-info text-white col-spaced">
+  		<div>Wins: <span id="wins"></span></div>
+  		<div>Losses: <span id="loses"></span></div>
+  </div>
+ </div>
+
+<!-- Image buttons -->
+
+		<div class="row top-buffer">
+			<div class="col-md-4">
+				<span>
+					<button class="btn btn-primary text-center diamond">Diamond</button>
+					<button class="btn btn-primary text-center ruby">Ruby</button>
+					<button class="btn btn-primary text-center sapphire">Sapphire</button>
+					<button class="btn btn-primary text-center emerald">Emerald</button>
+				</span>
+			</div>
+		</div>
+
+	<!-- The users score -->
+
+			<div class="row top-buffer">
+				<div class="col-md-3 bg-warning text-white">
+					<h3>Your Score is: <span id="userScore" class="text-center">0</span></h3>
+  			</div>
+  		</div>
+<!-- End of stuff -->
+		</div>
+	</body>
+</html>
