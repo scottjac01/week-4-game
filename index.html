@@ -4,17 +4,12 @@
   <meta charset="UTF-8">
   <title>Crystal-Collector</title>
 
-  <!-- Added link to the Javascript Library -->
-  <script src= "assets/javascript/game.js"></script>
-
-  <!-- Added link to the jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Added a link to Bootstrap-->
+    <!-- Added a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!--- CSS file -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 
 </head>
 
@@ -57,12 +52,12 @@
 
 <div class="row top-buffer">
 	<div class="col-md-3 bg-info text-white">
-			<h3>Number to Guess: <span id="number-to-guess" class="text-center">0</span></h3>
+			<h3>Number to Guess: <span id="numGuess" class="text-center">0</span></h3>
   </div>
 
   <div class="col-md-1 bg-info text-white col-spaced">
-  		<div>Wins: <span id="wins"></span></div>
-  		<div>Losses: <span id="loses"></span></div>
+  		<div>Wins: <span id="hasWon"></span></div>
+  		<div>Losses: <span id="hasLost"></span></div>
   </div>
  </div>
 
@@ -70,11 +65,7 @@
 
 		<div class="row top-buffer">
 			<div class="col-md-4">
-				<span>
-					<button class="btn btn-primary text-center diamond">Diamond</button>
-					<button class="btn btn-primary text-center ruby">Ruby</button>
-					<button class="btn btn-primary text-center sapphire">Sapphire</button>
-					<button class="btn btn-primary text-center emerald">Emerald</button>
+				<span id="addButtons">
 				</span>
 			</div>
 		</div>
@@ -88,5 +79,11 @@
   		</div>
 <!-- End of stuff -->
 		</div>
+
+		<!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added link to the Javascript Library -->
+  <script src= "assets/javascript/game.js"></script>
 	</body>
 </html>
